@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Immanuel Enterprises — Competitor & Market Analysis</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<style>
+.cmp2{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:10px}
+.cmp2 th{text-align:left;padding:12px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp2 td{padding:12px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp2 tr:last-child td{border-bottom:none}
+.cmp2 td b{color:var(--ink)}
+.cmp2 tr.you td{background:#241a12}
+.cmp2 .big{font-size:18px;font-weight:800;color:var(--ink)}
+.cmp2 .good{color:var(--good);font-weight:800}
+.cmp2 .bad{color:var(--bad);font-weight:800}
+.mth{background:#0b0f15;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;font-family:ui-monospace,Consolas,monospace;font-size:13px;line-height:1.9;color:var(--mut)}
+.mth .r{color:#ff9d94;font-weight:700}.mth .g{color:#84e0a8;font-weight:700}.mth .c{color:#5b6672}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Competitor &amp; Market Analysis &middot; prepared as promised, free</div>
+    <h1>Immanuel Enterprises &mdash; Who You Are Actually Competing With</h1>
+    <div class="sub">Prepared for Isaac &middot; 3 September 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="win" style="margin:26px 0">
+    <div class="lab">Why you have this</div>
+    <p><b>I said on our call I would put this together whether or not anything comes of it.</b> Here it
+    is. <b>Use it with your marketing lady</b> &mdash; every figure in it is public, and you can check
+    all of them yourself.</p>
+  </div>
+
+  <section>
+    <div class="h">The Single Most Important Comparison</div>
+    <div class="flag">
+      <div class="lab">Reviews &mdash; the first thing anyone compares, and where you are third</div>
+      <table class="cmp2">
+        <tr><th>Company</th><th>Rating</th><th>Reviews</th><th>Notes</th></tr>
+        <tr><td><b>Blue Bird Roofing</b></td><td class="big good">5.0</td><td class="big">209</td><td>Serves Oneida. Rating and count on their own homepage.</td></tr>
+        <tr><td><b>Campany Roofing</b></td><td class="big good">4.8</td><td class="big">126</td><td>Oneida. Trading since 1980.</td></tr>
+        <tr class="you"><td><b>Immanuel Enterprises</b></td><td class="big bad">4.3</td><td class="big bad">51</td><td>Three reviews on your site, no rating shown, no names.</td></tr>
+      </table>
+      <p style="margin-top:14px"><b>You are third on rating and third on count, in your own town.</b>
+      And unlike both of them, <b>your website does not display a rating at all</b> &mdash; it shows
+      three unattributed quotes.</p>
+      <p><b>This is the cheapest gap on the whole page to close.</b> You do 55&ndash;60 jobs a month.
+      That is roughly <b>700 customers a year</b>, and you have collected 51 reviews in total. Blue Bird
+      has four times your count. <b>Nothing about that is a marketing budget problem.</b></p>
+      <p><b>And it compounds into everything else.</b> A 4.3 next to a 4.8 and a 5.0 in the same map
+      results is a worse click-through rate, a worse conversion rate on the clicks you do buy, and a
+      higher effective cost per lead &mdash; before anybody touches the ad account.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What You Saw Live On Our Call</div>
+    <div class="warn">
+      <div class="lab">You searched &ldquo;roofers near Oneida&rdquo; while we were talking</div>
+      <div class="mth">Your result order, in your words:
+  1. <span class="c">Better Business Bureau</span>   <span class="c">(directory)</span>
+  2. <span class="r">Campany Roofing</span>          <span class="c">&larr; competitor, ranking above you</span>
+  3. <span class="g">Immanuel</span>
+  <span class="c">...and then your sponsored ad</span></div>
+      <p><b>Campany outranks you organically in your own town</b>, and they have been there since 1980.
+      You are not going to beat forty-six years of history head-on.</p>
+      <p><b>But note where your paid ad sat: below both of them.</b> You are paying to appear underneath
+      a competitor you already appear above nothing on. <b>That is the clearest possible sign the paid
+      side needs rebuilding rather than topping up.</b></p>
+      <p><b>The others you named:</b> Erie Home (national, appears on generic searches), Stellar Roofing
+      (Syracuse, large, comes into your area), Home Evolution (Utica), Blue Collar Roofers, Utica Roof
+      Pros. <b>Plus the directories</b> &mdash; Angi, HomeAdvisor, Yelp, Thumbtack, BBB &mdash; which
+      occupy several of the top slots and sell your own customers back to you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Blue Bird Is The One To Watch</div>
+    <div class="flag">
+      <div class="lab">The only local competitor doing paid properly</div>
+      <div class="mth">Google Ads conversion tag   <span class="r">AW-451117534  &mdash; live</span>
+Google Tag Manager          <span class="r">GTM-PCZ63VQ2  &mdash; live</span>
+Meta pixel                  <span class="r">present</span>
+Rating on their homepage    <span class="r">5.0 from 209 reviews</span>
+
+Your conversion tags        <span class="g">triggers built, none attached</span></div>
+      <p><b>They are running the same stack you are.</b> The difference is that theirs appears to be
+      wired up and yours is not &mdash; which means they can see which clicks turn into roofs and adjust,
+      and at the moment nobody on your side can.</p>
+      <p><b>They also have a page for Oneida specifically</b>, despite not being based there. That is a
+      competitor deliberately taking your town.</p>
+      <p><b>This is the single best argument for fixing the tracking before spending another dollar.</b>
+      You are bidding in the same auction as somebody who can measure. That is not a fair fight.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Your Own Numbers, And What They Should Be</div>
+    <div class="flag">
+      <div class="lab">From the figures you pulled up on the call</div>
+      <div class="mth">FACEBOOK &mdash; last month
+  Spend                  <span class="r">~$5,000</span>
+  Leads                  <span class="r">16</span>
+  Cost per lead          <span class="r">$315</span>
+  Jobs closed            <span class="r">1  (under 6%)</span>
+  Industry benchmark     <span class="g">$40-$80 per qualified lead</span>
+
+GOOGLE &mdash; six months
+  Spend                  <span class="r">~$3,000  (~$500/mo)</span>
+  Clicks since 13 March  <span class="r">60  (~10/month, ~2.5/week)</span>
+
+  <span class="c">Your words: "that's $8,500 to $9,000 of wasted money"</span></div>
+      <p><b>$315 against a $40&ndash;80 benchmark is four to eight times what it should be.</b> Those
+      same 16 leads should have cost between $640 and $1,280. You paid $5,000.</p>
+      <p><b>Sixty clicks in six months on Google is not a campaign.</b> That is roughly two and a half
+      clicks a week. Whatever is set up there, it is not running in any meaningful sense.</p>
+      <p><b>The economics still work in your favour, which is the frustrating part.</b> A replacement at
+      $17,000&ndash;20,000 on your 55% net is somewhere around $9,500 of profit. <b>Even one job from
+      $5,000 of spend was not a loss.</b> It is just nowhere near what it should be &mdash; and at a
+      &lt;6% conversion rate it is luck rather than a system.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Why The Leads Are Bad &mdash; It Is The Offer</div>
+    <div class="warn">
+      <div class="lab">The diagnosis you reached yourself on the call</div>
+      <p><b>Your Facebook offer is &ldquo;up to $2,500 off a roof replacement&rdquo;.</b> You said it
+      better than I could:</p>
+      <p style="padding-left:16px;border-left:3px solid var(--accent)"><i>&ldquo;When you try to hook
+      people with up to $2,500 off a roof replacement, it's like, oh, I wonder if I could qualify for
+      that much. Let's just see. They're not serious, because it's generic. It's not specific.&rdquo;</i></p>
+      <p><b>A discount hook selects for the one customer you cannot serve.</b> You told me the only
+      reason people do not choose Immanuel is price &mdash; that they go with someone $2,500 to $3,000
+      cheaper. <b>So an ad led by a discount is deliberately attracting the exact person who will not
+      buy from you.</b></p>
+      <p><b>Two other things compound it.</b> Five creatives against $5,000 of spend is creative fatigue
+      by week two. And you said the targeting is aimed at <b>areas you do not normally serve</b>
+      &mdash; so a share of that $5,000 bought leads you could never have converted.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Where The Market Is Weak &mdash; And What You Own</div>
+    <div class="win">
+      <div class="lab">The genuinely good news</div>
+      <ul>
+        <li><b>Nobody local is winning on measurement except Blue Bird.</b> Campany's site blocks inspection, but the wider market here is behind &mdash; and that is an opportunity rather than a threat.</li>
+        <li><b>You already have the whole stack installed.</b> GA4, Tag Manager, Google Ads and a Meta pixel. Blue Bird has the same. Nobody else obviously does. You are one configuration job away from parity with the best-run competitor in your market.</li>
+        <li><b>85% of your work is organic</b> &mdash; referrals, wrapped trucks, billboards, yard signs, word of mouth. That is a genuinely strong position, and it means the paid side is upside rather than life support.</li>
+        <li><b>Stellar Roofing is a Syracuse operation coming into your area</b>, and you rate their work poorly. A large out-of-town firm with a weak local reputation is the easiest competitor to position against &mdash; it is exactly the &ldquo;we live here, they don't&rdquo; argument.</li>
+        <li><b>Repairs net you around 60% against 55% on replacements</b>, and they are only 10% of your mix. That is the most under-exploited line in the business.</li>
+        <li><b>You can absorb 20 more jobs a month.</b> Very few contractors this size have that headroom.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What We Would Do, In Order</div>
+    <ul class="road">
+      <li><b>1. Attach the conversion tags</b> &mdash; before another dollar. Nothing else can be judged until this is done</li>
+      <li><b>2. Ask for reviews systematically</b> &mdash; 700 customers a year against 51 reviews is the biggest free win available</li>
+      <li><b>3. Put the rating and count on the site</b>, with names on the testimonials</li>
+      <li><b>4. Kill the discount hook</b> &mdash; it is selecting for the customer you cannot win</li>
+      <li><b>5. Fix the targeting</b> so you stop paying for areas you do not serve</li>
+    </ul>
+    <div class="h" style="margin-top:24px">Then</div>
+    <ul class="road road2">
+      <li><b>Rebuild the creative</b> &mdash; five ads against $5,000 guarantees fatigue</li>
+      <li><b>Lead with proof rather than price</b>: named jobs, the warranty, financing, and being local against Syracuse</li>
+      <li><b>Push the repair line</b> &mdash; higher margin, faster cash, and it opens replacement conversations later</li>
+      <li><b>Call tracking</b>, so phone calls count alongside forms</li>
+      <li><b>Judge everything on cost per booked job</b>, never clicks</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>You are third on reviews in your own town, and you do 700 jobs a year.</h2>
+    <p>That is not a budget problem. Fix the tracking, ask for the reviews, and stop advertising a
+    discount to people who were only ever going to buy on price.</p>
+  </div>
+</div>
+
+<footer>
+  Prepared by Andrei Givero &middot; AG1 Consulting &middot; 3 September 2026<br>
+  For Isaac at Immanuel Enterprises Inc., Oneida, New York. <b>Provided free of charge, as agreed on our
+  call of 3 September 2026.</b> <b>Your own figures &mdash; job volume, average job values, net margins,
+  spare capacity, the 85/15 organic-to-paid split, the Facebook spend, lead count, cost per lead and
+  conversion, and the Google spend and click count &mdash; are as you stated them on that call, taken
+  from your own accounts on screen, and have NOT been independently verified by us.</b> <b>Competitor
+  ratings and review counts were read from publicly available listings and from those companies' own
+  websites on 3 September 2026 and change constantly; verify before relying on them.</b> <b>The Google
+  Ads and Tag Manager identifiers shown for Blue Bird Roofing are publicly visible in their own
+  published page code. We have NOT seen inside their accounts and make no claim about their spend,
+  their results, or whether their tracking is correctly configured &mdash; only that the tags are
+  present.</b> <b>Statements about Campany Roofing, Erie Home, Stellar Roofing, Home Evolution, Blue
+  Collar Roofers and Utica Roof Pros reflect publicly available information together with your own
+  account of them on our call; the assessment of Stellar Roofing's work quality is your opinion, not a
+  finding of ours.</b> <b>The search-result order described is what you reported seeing on your own
+  screen; search results vary by device, location, personalisation and time, and we have not
+  independently reproduced it.</b> <b>The $40&ndash;80 cost-per-qualified-lead figure is our own
+  operating benchmark from work in this sector; it is not a guarantee, an industry standard, or a
+  promise of what your campaigns would achieve.</b> <b>The profit-per-job arithmetic applies your own
+  stated average job value and net margin and is illustrative only.</b> <b>Nothing in this document is a
+  forecast, projection or guarantee, and no number of leads, jobs or revenue is promised anywhere.</b>
+  <b>Nothing here is a comment on the competence or conduct of your current marketing provider, whose
+  work and accounts we have not seen.</b>
+</footer>
+</body></html>
