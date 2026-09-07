@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Immanuel Enterprises — Website & Advertising Audit</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Website &amp; Advertising Audit</div>
+    <h1>Immanuel Enterprises Inc. &mdash; Oneida &amp; Central New York</h1>
+    <div class="sub">Prepared for Isaac &middot; 3 September 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="gradecard gc-C">
+      <div class="bigletter bl-C">C</div>
+      <div class="score100">55 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>You have built all the plumbing and not connected the taps.</h2>
+      <p><b>Google Analytics, Tag Manager, a Google Ads account and a Meta pixel are all live on your
+      site</b> &mdash; more than almost any roofer we audit. <b>But your Tag Manager container has the
+      triggers built and no conversion tags attached to them.</b> So the clicks and form submissions are
+      being watched, and nothing is being counted.</p>
+      <span class="tag">Oneida NY &middot; Madison, Oneida &amp; Onondaga counties &middot; roofing &amp; siding &middot; 10-year warranty</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">Finding 1 &mdash; Triggers Built, Conversions Missing</div>
+    <div class="flag">
+      <div class="lab">Read from your live Tag Manager container GTM-N26MJS4J, 3 September 2026</div>
+      <div class="code">TRIGGERS in the container
+  Click                    <span class="ok">&#10003; present</span>
+  Form submission          <span class="ok">&#10003; present</span>
+  Link click               <span class="ok">&#10003; present</span>
+  Element visibility       <span class="ok">&#10003; present</span>
+  Timer                    <span class="ok">&#10003; present</span>
+
+CONVERSION TAGS in the container
+  Google Ads conversion    <span class="ph">&#10007; none</span>
+  GA4 event tag            <span class="ph">&#10007; none</span>
+  Google tag               <span class="ph">&#10007; none</span>
+  Conversion linker only   <span class="c">present &mdash; but it links, it does not count</span></div>
+      <p><b>Somebody set up the listening and never attached the recording.</b> The container watches
+      for clicks and form submissions, and there is nothing inside it that turns those into a counted
+      conversion.</p>
+      <p><b>This is the single most valuable thing in this document</b>, because it means your Google
+      Ads account is very likely optimising against nothing, or against something loose like a page
+      view. <b>Google bids on what you tell it to value.</b> If it is not being told which clicks turned
+      into a phone call or a filled-in form, it will keep buying the cheapest traffic rather than the
+      traffic that produces roofs.</p>
+      <p><b>You said you already have SEO, Google and Facebook running.</b> The question we would want
+      answered before spending another dollar is not whether the ads work &mdash; it is whether anything
+      has ever been able to tell you.</p>
+      <p><b>Bring the account to the call.</b> Ten minutes inside it will settle this either way.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 2 &mdash; Your Commercial Page Sells To Homeowners</div>
+    <div class="flag">
+      <div class="lab">Word-for-word identical copy, twice on the homepage</div>
+      <div class="code">Residential Roofing
+  <span class="c">"We offer expert roofing services to ensure your HOME looks great
+   and is protected from the elements..."</span>
+
+Commercial Roofing
+  <span class="ph">"We offer expert roofing services to ensure your HOME looks great
+   and is protected from the elements..."</span>   <span class="ph">&larr; identical</span></div>
+      <p><b>The commercial roofing description is a copy of the residential one, word for word.</b> It
+      talks about a home, to a business owner, on the page meant to win commercial work.</p>
+      <p><b>Commercial roofing is the higher-value half of your trade</b> &mdash; bigger jobs, planned
+      budgets, repeat buildings, and a buyer who does not haggle the way a homeowner does. <b>You are
+      not asking for it in its own language anywhere.</b></p>
+      <p><b>It also costs you in search.</b> Google cannot tell the two pages apart if the words are the
+      same, so neither ranks properly for what it actually is.</p>
+      <p><b>This is a rewrite of one paragraph.</b> It is the cheapest fix on the list and it points at
+      the most valuable work you do.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 3 &mdash; Two Google Tags, And A Question To Ask</div>
+    <div class="warn">
+      <div class="lab">What is actually loading on your homepage</div>
+      <div class="code">GA4 property         <span class="ok">G-QW1MWGTX6M</span>   <span class="c">loaded directly on the page</span>
+Google tag           <span class="ok">GT-M3S9J6XS</span>    <span class="c">a second, separate loader</span>
+Google Ads           <span class="ok">AW-11456797553</span>
+Tag Manager          <span class="ok">GTM-N26MJS4J</span>
+Meta pixel           <span class="ok">present</span></div>
+      <p><b>All five are live, which is genuinely rare.</b> But they have been installed in two
+      different ways &mdash; some hard-coded onto the page, some through Tag Manager &mdash; and that is
+      how double-counting starts.</p>
+      <p><b>The question to ask whoever set this up:</b> is anything firing twice? If a form submission
+      is counted once on the page and once through the container, your reported conversions are inflated
+      and every cost-per-lead figure you have been shown is understated.</p>
+      <p><b>We are not saying that is happening.</b> We are saying nothing in the public code rules it
+      out, and it is a ten-minute check inside the accounts.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 4 &mdash; Your Reviews Are Excellent And Unattributed</div>
+    <div class="warn">
+      <div class="lab">Three real, specific, persuasive reviews &mdash; and no rating anywhere</div>
+      <p><b>These are good reviews.</b> They name behaviour rather than adjectives: the crew
+      <em>&ldquo;treated my home as if it were their own&rdquo;</em>, a repair
+      <em>&ldquo;resolved within a week&rdquo;</em>, and a quote that came in at exactly
+      <em>&ldquo;what he quoted his estimate at&rdquo;</em>. One customer liked the work enough to bring
+      you back for their son-in-law's siding.</p>
+      <div class="code">Star rating published    <span class="ph">none</span>
+Review count published   <span class="ph">none</span>
+Customer names shown     <span class="ph">none</span></div>
+      <p><b>No score, no count, no names.</b> A rating with a number beside it is the fastest proof a
+      stranger can absorb, and somebody arriving from a paid ad decides in seconds.</p>
+      <p><b>For a business paying for clicks, this is the cheapest conversion improvement available</b>
+      &mdash; the traffic is already bought and paid for by the time they reach this page.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What Is Genuinely Good</div>
+    <div class="win">
+      <div class="lab">You are further ahead than almost anyone we audit</div>
+      <ul>
+        <li><b>The full measurement stack is installed</b> &mdash; GA4, Tag Manager, Google Ads and a Meta pixel. Most contractors have none of it.</li>
+        <li><b>County pages already exist</b>: Madison, Oneida and Onondaga, plus Cazenovia and Chittenango. That is the structure most sites are missing entirely.</li>
+        <li><b>A blog and a gallery</b>, both of which give search something to rank and customers something to trust.</li>
+        <li><b>Financing is offered and has its own page.</b> On a $15,000 roof that removes the largest single objection there is.</li>
+        <li><b>A 10-year craftsmanship warranty</b>, stated plainly.</li>
+        <li><b>Three strong, specific customer reviews</b> and a tap-to-call number, (315) 240-0887.</li>
+        <li><b>Fully insured, locally owned, and clear about it.</b></li>
+      </ul>
+      <p><b>Nothing here needs rebuilding.</b> It needs the conversions wired up, one paragraph
+      rewritten, and your rating put where people can see it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Scorecard</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Conversion tags</div><div class="sc">Triggers built, no conversion tags attached to them.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Commercial positioning</div><div class="sc">Commercial page uses the residential copy, word for word.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Rating and review count</div><div class="sc">Three good reviews, no score or count published.</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Call tracking</div><div class="sc">None found, on a business where the phone is the channel.</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Tag hygiene</div><div class="sc">Tags installed two different ways; double-firing not ruled out.</div></div><div class="badge gC">C&minus;</div></div>
+      <div class="row"><div><div class="rname">Review attribution</div><div class="sc">No customer names or dates on any of the three.</div></div><div class="badge gC">C&minus;</div></div>
+      <div class="row"><div><div class="rname">Enquiry qualification</div><div class="sc">Nothing sorts a full re-roof from a small repair.</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Service pages</div><div class="sc">Roofing and siding separated, each with a page.</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Blog and gallery</div><div class="sc">Both present, both giving search something to work with.</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Warranty and insurance</div><div class="sc">10-year craftsmanship warranty, fully insured, stated plainly.</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Financing offered</div><div class="sc">Its own page. Removes the biggest objection on a large job.</div></div><div class="badge gB">B+</div></div>
+      <div class="row"><div><div class="rname">County pages</div><div class="sc">Madison, Oneida, Onondaga plus two towns. Properly structured.</div></div><div class="badge gA">A&minus;</div></div>
+      <div class="row"><div><div class="rname">Tap-to-call</div><div class="sc">Working number in the header on every page.</div></div><div class="badge gA">A&minus;</div></div>
+      <div class="row"><div><div class="rname">Measurement installed</div><div class="sc">GA4, GTM, Google Ads and Meta pixel all live.</div></div><div class="badge gA">A</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Opportunity</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">You want</div><div class="big">5&ndash;10</div><div class="small">more jobs a month</div></div>
+      <div class="ocard"><div class="lab">Conversion tags firing</div><div class="big">0</div><div class="small">in your Tag Manager container</div></div>
+      <div class="ocard"><div class="lab">Rating shown on site</div><div class="big">0</div><div class="small">and it costs nothing</div></div>
+    </div>
+    <p class="oppnote"><b>No revenue or spend figure appears in this document.</b> You have not told us
+    your monthly ad budget, your average job value, or what SEO and ads have produced so far, and we are
+    not going to invent them. <b>Those three numbers decide whether your accounts need fixing or
+    replacing</b> &mdash; and with Finding 1 unresolved, it is possible nobody can currently answer the
+    third one. <b>Bring all three to the call.</b></p>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="arrow">
+      <div class="gradecard gc-C" style="flex:1"><div class="bigletter bl-C">C</div><div class="score100">55 / 100 today</div></div>
+      <div class="ar">&rarr;</div>
+      <div class="gradecard gc-B" style="flex:1"><div class="bigletter" style="color:#3fb950;text-shadow:0 0 40px rgba(63,185,80,.45)">A</div><div class="score100">93 / 100 projected</div></div>
+    </div>
+    <div class="gscale">
+      <div class="gtitle">Where you sit today, and where the fourteen rows above put you</div>
+      <div class="gtrack">
+        <div class="gmark now" style="left:55%"><div class="gm-lab">You today</div><div class="gm-val">C &middot; 55</div></div>
+        <div class="gdot now" style="left:55%"></div>
+        <div class="gdot proj" style="left:93%"></div>
+        <div class="gmark proj" style="left:93%"><div class="gm-val">A &middot; 93</div><div class="gm-lab">After the build</div></div>
+      </div>
+      <div class="gticks"><span>F</span><span>D</span><span>C</span><span>B</span><span>A</span><span>A+</span></div>
+    </div>
+    <p class="oppnote">Projected, not promised. <b>It is not a projection of leads, jobs or revenue.</b></p>
+  </section>
+
+  <section>
+    <div class="h">Fix First &mdash; Before Another Dollar Of Spend</div>
+    <ul class="road">
+      <li><b>Attach conversion tags to the triggers</b> that already exist in your container</li>
+      <li><b>Check nothing is firing twice</b> between the page and Tag Manager</li>
+      <li><b>Rewrite the commercial roofing paragraph</b> so it speaks to a building owner</li>
+      <li><b>Put your Google rating and review count on the homepage</b>, with the number</li>
+      <li><b>Put first names and towns on the three reviews</b></li>
+    </ul>
+    <div class="h" style="margin-top:24px">Build Next</div>
+    <ul class="road road2">
+      <li><b>Call tracking</b>, so phone calls count as conversions alongside forms</li>
+      <li><b>A real commercial page</b> &mdash; flat roofs, budgets, scheduling around a working business</li>
+      <li><b>A qualifying form</b> that separates a re-roof from a repair</li>
+      <li><b>Then judge the ad accounts properly</b>, on cost per booked job rather than clicks</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>You are not missing the tools. You are missing the wiring.</h2>
+    <p>Everything needed to measure this business is already installed. Connect it, and for the first
+    time the question &ldquo;is the advertising working?&rdquo; will have an answer.</p>
+  </div>
+</div>
+
+<footer>
+  Prepared by Andrei Givero &middot; AG1 Consulting &middot; 3 September 2026<br>
+  For Immanuel Enterprises Inc., Oneida, New York. All findings were read from
+  immanuelenterprisesinc.com, its served page source and its publicly readable Google Tag Manager
+  container on 3 September 2026, and reflect those pages on that date only. <b>The container, property
+  and conversion IDs shown are publicly visible in your own published code.</b> <b>The finding that no
+  conversion tags are present describes the contents of the publicly served container only. Tags can be
+  configured in ways that do not appear in that file, conversions can be imported from Google Analytics
+  or configured directly inside the Google Ads account, and server-side or offline conversion tracking
+  would not appear at all &mdash; so this is a strong indication rather than proof, and it must be
+  confirmed inside your accounts before any conclusion is drawn.</b> <b>We have NOT seen your Google
+  Ads, Analytics, Meta or SEO accounts, do not know your spend, and make no claim about what your
+  advertising has produced, whether it is profitable, or whether anyone has managed it well.</b> <b>The
+  comment on double-counting is a question to check, not a finding.</b> Your service list, coverage
+  area, warranty, insurance, financing and locally-owned status are <b>your own published claims and
+  have not been independently verified by us</b>. The three customer reviews are quoted from your own
+  website and we have not contacted the customers. Your target of 5&ndash;10 additional jobs per month
+  and your existing SEO and advertising are <b>as reported to us by our team following their call with
+  you</b>. <b>Comments on how Google bids, on landing-page relevance and on customer behaviour are
+  general commercial observations, not researched findings about your account.</b> Grades are our own
+  assessment against a consistent framework and are not an industry-standard measure. <b>No number of
+  leads, calls, jobs or revenue is promised or forecast anywhere in this document.</b>
+</footer>
+</body></html>
