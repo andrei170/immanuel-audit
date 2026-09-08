@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Immanuel Enterprises — Plan & Pricing — AG1</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Proposed Plan &amp; Pricing &middot; follow-up to our call of 3 September</div>
+    <h1>Immanuel Enterprises &mdash; Closing The Gap On Blue Bird</h1>
+    <div class="sub">Prepared for Isaac &middot; 8 September 2026 &middot; AG1 Consulting</div>
+
+    <div class="hero">
+      <div class="gradecard gc-F">
+        <div class="bigletter bl-F" style="font-size:64px">$315</div>
+        <div class="score100">your cost per lead</div>
+      </div>
+      <div class="heroread">
+        <h2>You are one configuration job away from parity with the best-run roofer in your market.</h2>
+        <p>Blue Bird has the same advertising stack you do. Theirs is wired up. Yours has the
+        conversion triggers built and <b>none of them attached</b> &mdash; so they can see which clicks
+        turn into roofs and you cannot.</p>
+        <p>That is the whole difference, and it is a fix rather than a rebuild. Everything below
+        follows from it.</p>
+        <div class="tag">Oneida, New York &middot; 55&ndash;60 jobs/month &middot; room for 20 more</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">Where You Sit Against Them Today</div>
+    <table class="cmp">
+      <tr><th></th><th>Blue Bird Roofing</th><th>Campany Roofing</th><th class="you">Immanuel</th></tr>
+      <tr><td><b>Google rating</b></td><td class="yes">5.0</td><td class="yes">4.8</td><td class="no">4.3</td></tr>
+      <tr><td><b>Review count</b></td><td class="yes">209</td><td class="yes">126</td><td class="no">51</td></tr>
+      <tr><td><b>Rating shown on own homepage</b></td><td class="yes">Yes</td><td>not assessed</td><td class="no">No &mdash; three unattributed quotes</td></tr>
+      <tr><td><b>Google Ads conversion tag live</b></td><td class="yes">Yes &mdash; AW-451117534</td><td>not assessed</td><td class="no">Built, not attached</td></tr>
+      <tr><td><b>Tag Manager live</b></td><td class="yes">Yes &mdash; GTM-PCZ63VQ2</td><td>not assessed</td><td class="yes">Installed</td></tr>
+      <tr><td><b>Meta pixel</b></td><td class="yes">Present</td><td>not assessed</td><td class="yes">Installed</td></tr>
+      <tr><td><b>A page targeting Oneida</b></td><td class="yes">Yes &mdash; and they are not based there</td><td>Based in Oneida</td><td class="no">You are Oneida, and have no page for it</td></tr>
+      <tr><td><b>Can measure cost per booked job</b></td><td class="yes">Yes</td><td>not assessed</td><td class="no">No</td></tr>
+    </table>
+    <div class="flag">
+      <div class="lab">Read that table again, because it is not a money problem</div>
+      <p>You do <b>55&ndash;60 jobs a month &mdash; roughly 700 customers a year &mdash; and you have
+      51 reviews in total.</b> Blue Bird has four times your count. Nothing about that gap was bought
+      with an advertising budget.</p>
+      <p>And it compounds into everything else. A 4.3 sitting next to a 5.0 in the same map result is a
+      worse click-through rate and a worse conversion rate on every click you already pay for.
+      <b>Your cost per lead is partly a review problem.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Has To Happen To Reach Parity</div>
+    <table class="cmp">
+      <tr><th>Gap</th><th>What closing it takes</th><th>Cost</th></tr>
+      <tr><td><b>Conversion tracking not attached</b></td><td>Attach the triggers, add call tracking, report CPL and cost per booked job</td><td class="yes">One-off fix</td></tr>
+      <tr><td><b>4.3 rating, 51 reviews</b></td><td>A systematic ask after every job. 700 customers a year is the asset.</td><td class="yes">Free &mdash; process, not spend</td></tr>
+      <tr><td><b>Rating not shown on site</b></td><td>Rating, count and named testimonials on the homepage</td><td class="yes">One-off fix</td></tr>
+      <tr><td><b>No qualification on the form</b></td><td>Multi-step form separating repair from replacement, with job type and urgency</td><td class="yes">One-off fix</td></tr>
+      <tr><td><b>Services listed you do not offer</b></td><td>Remove commercial roofing and anything else you do not sell</td><td class="yes">One-off fix</td></tr>
+      <tr><td><b>No Oneida page</b></td><td>A page for your own town, which a competitor already targets</td><td class="yes">One-off fix</td></tr>
+      <tr><td><b>Discount-led offer</b></td><td>Replace &ldquo;$2,500 off&rdquo; with proof-led positioning</td><td>Monthly</td></tr>
+      <tr><td><b>Five creatives against $5,000</b></td><td>15&ndash;30 creatives a month to outrun fatigue</td><td>Monthly</td></tr>
+      <tr><td><b>Targeting areas you do not serve</b></td><td>Rebuild geo-targeting to your actual service area</td><td>Monthly</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The One-Off: Fixing The Website And The Tracking</div>
+    <div class="win">
+      <div class="lab">Estimate &mdash; $1,500 to $2,500, one time</div>
+      <p>This is <b>not a new website.</b> Yours works and we are not proposing to rebuild it. This is
+      the list of fixes above, done once:</p>
+      <ul>
+        <li>Conversion tracking attached and verified end to end &mdash; GA4, Google Ads, Meta, and call tracking so phone calls count alongside forms</li>
+        <li>A multi-step qualification form that separates a $1,800 repair from a $19,000 replacement before it reaches your team</li>
+        <li>Rating, review count and named testimonials moved onto the homepage</li>
+        <li>Services you do not offer removed</li>
+        <li>A page for Oneida</li>
+        <li>The customer journey simplified to a clear step-by-step</li>
+      </ul>
+      <p><b>Where in the range:</b> the bottom if it is the tracking and the form only; the top if the
+      page work and the Oneida page are included. We would confirm the number once we have seen inside
+      the site, not before.</p>
+      <p><b>This one is worth doing whatever else you decide</b>, including staying with your current
+      agency &mdash; because until it is done, nobody can tell you what your advertising is producing.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Three Ways To Run The Advertising</div>
+    <p style="color:var(--mut);font-size:15px;margin-bottom:18px">In every option below, <b>ad spend is
+    a hard cap and goes straight to the platform. It is not AG1 revenue and we take no percentage of
+    it.</b></p>
+
+    <div class="two">
+      <div class="box">
+        <div class="tagp">Option 1 &mdash; Rebuild</div>
+        <h3>Less than you spend today, done properly</h3>
+        <table class="cmp" style="margin:10px 0">
+          <tr><td>AG1 management fee</td><td><b>$2,000/mo</b></td></tr>
+          <tr><td>Your ad spend &mdash; paid to the platforms</td><td><b>$2,000/mo</b></td></tr>
+          <tr><td><b>Total out of pocket</b></td><td><b>$4,000/mo</b></td></tr>
+        </table>
+        <ul>
+          <li>Facebook rebuilt from scratch &mdash; proof-led, not discount-led</li>
+          <li>Google fixed and actually running, rather than 2.5 clicks a week</li>
+          <li>15&ndash;30 creatives a month</li>
+          <li>Geo-targeting rebuilt to your real service area</li>
+          <li>Reported on cost per booked job, split repair against replacement</li>
+          <li>Reviewed at 90 days before anything scales</li>
+        </ul>
+      </div>
+
+      <div class="box pri">
+        <div class="tagp">Recommended</div>
+        <h3>Roughly what you spend now &mdash; for a completely different result</h3>
+        <table class="cmp" style="margin:10px 0">
+          <tr><td>AG1 management fee</td><td><b>$3,000/mo</b></td></tr>
+          <tr><td>Your ad spend &mdash; paid to the platforms</td><td><b>$3,500/mo</b></td></tr>
+          <tr><td><b>Total out of pocket</b></td><td><b>$6,500/mo</b></td></tr>
+        </table>
+        <ul>
+          <li>Everything in Option 1</li>
+          <li><b>Both channels running properly at once</b> &mdash; at $2,000 one of them is always too thin to learn</li>
+          <li>A separate repair campaign &mdash; your 60% margin line, currently only 10% of the mix</li>
+          <li>Landing pages per campaign, so ads stop landing on a general homepage</li>
+          <li>Call tracking reported alongside forms</li>
+          <li>Review-generation process built and run with your team</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box" style="margin-top:18px">
+      <div class="tagp">Option 3 &mdash; Fill the capacity</div>
+      <h3>Aimed squarely at the 20 spare jobs a month</h3>
+      <table class="cmp" style="margin:10px 0">
+        <tr><td>AG1 management fee</td><td><b>$4,000/mo</b></td></tr>
+        <tr><td>Your ad spend &mdash; paid to the platforms</td><td><b>$6,000/mo</b></td></tr>
+        <tr><td><b>Total out of pocket</b></td><td><b>$10,000/mo</b></td></tr>
+      </table>
+      <ul>
+        <li>Everything above, at scale, across a wider radius</li>
+        <li>Separate campaigns per job type so repair and replacement never compete for budget</li>
+        <li>Retargeting and a proper follow-up sequence on non-converters</li>
+        <li>Positioning built against Stellar Roofing &mdash; the out-of-town Syracuse operation</li>
+      </ul>
+      <p style="font-size:14px;color:var(--mut);margin-top:10px"><b>We would not start here.</b> Scaling
+      spend before the tracking has produced a few months of clean data is how the last $8,500 went.</p>
+    </div>
+
+    <div class="warn" style="margin-top:18px">
+      <div class="lab">Why the middle one</div>
+      <p>You are already spending roughly $5,500 a month between Facebook and Google. <b>The
+      recommended option is not asking you to spend more &mdash; it is asking you to spend about the
+      same, with the tracking attached, the offer changed and both channels actually running.</b></p>
+      <p>Option 1 is genuinely cheaper than today, and it is the honest choice if you want to prove the
+      approach before committing. But at $2,000 of spend across two platforms, one of them is always
+      starved, and the repair campaign &mdash; your best margin &mdash; is the one that gets cut.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Are Not Touching</div>
+    <div class="win">
+      <div class="lab">Said plainly</div>
+      <ul>
+        <li><b>Your 85% organic.</b> Referrals, wrapped trucks, billboards, yard signs and word of mouth are working and we are not going near them. Paid is upside here, not life support.</li>
+        <li><b>Your CRM stays yours.</b> It is built on GoHighLevel, which is what we use. A 14&ndash;30 day transition working alongside your current agency, and <b>you retain full ownership</b> throughout.</li>
+        <li><b>Your website is not being rebuilt.</b> The one-off above is a fix list, not a redesign.</li>
+        <li><b>No long tie-in.</b> The monthly element is monthly.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">How You Would Judge It</div>
+    <table class="cmp">
+      <tr><th>Reported every month</th><th>Never used as the measure</th></tr>
+      <tr><td class="yes"><b>Cost per booked job</b>, split repair against replacement</td><td class="no">Impressions</td></tr>
+      <tr><td class="yes"><b>Cost per qualified lead</b></td><td class="no">Clicks</td></tr>
+      <tr><td class="yes"><b>Lead-to-job conversion rate</b></td><td class="no">Reach</td></tr>
+      <tr><td class="yes"><b>Calls tracked alongside forms</b></td><td class="no">&ldquo;Engagement&rdquo;</td></tr>
+      <tr><td class="yes"><b>Review count and rating, monthly</b></td><td class="no">Vanity dashboards</td></tr>
+    </table>
+    <p class="oppnote">Your Facebook is currently at <b>$315 a lead against a $40&ndash;80 benchmark</b>
+    and under 6% of those leads became jobs. Both of those numbers are yours, from your own screen on
+    our call. <b>The first job of the plan is to make them visible every month rather than once a
+    quarter when somebody goes looking.</b></p>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>The tracking fix is worth doing even if you stay where you are.</h2>
+    <p>Until the conversion tags are attached, nobody &mdash; us, you, or your current agency &mdash;
+    can tell you what your advertising is actually producing. Everything else is an argument about
+    numbers nobody has.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 8 September 2026<br><br>
+    For Isaac at Immanuel Enterprises Inc., Oneida, New York. Follow-up to our call of 3 September 2026.
+    <b>All prices on this page are estimates for discussion and are not quotations, offers or
+    contracts.</b> The one-off website and tracking figure is a range, not a price, and would be
+    confirmed only after we have seen inside the site. Management fees are stated separately from ad
+    spend; <b>ad spend is a hard cap paid directly to the advertising platforms, is not AG1 revenue,
+    and we take no percentage of it.</b>
+    Your own figures &mdash; job volume, average job values, net margins, spare capacity, the 85/15
+    organic-to-paid split, the Facebook spend, lead count, cost per lead and conversion rate, and the
+    Google spend and click count &mdash; are as you stated them on our call from your own accounts on
+    screen, and have <b>not</b> been independently verified by us. Competitor ratings and review counts
+    were read from publicly available listings and those companies' own websites on 3 September 2026
+    and change constantly. The Google Ads and Tag Manager identifiers shown for Blue Bird Roofing are
+    publicly visible in their own published page code; <b>we have not seen inside their accounts and
+    make no claim about their spend, their results, or whether their tracking is correctly
+    configured</b> &mdash; only that the tags are present. Cells marked &ldquo;not assessed&rdquo; are
+    deliberately blank because Campany Roofing's site blocks inspection.
+    The $40&ndash;80 cost-per-qualified-lead figure is our own operating benchmark from work in this
+    sector; it is not an industry standard, a guarantee, or a promise of what your campaigns would
+    achieve. <b>Nothing on this page is a forecast or a projection, and no number of leads, jobs,
+    bookings or revenue is promised anywhere.</b> The reference to spare capacity of 20 jobs a month is
+    your own stated figure and is not a claim that any activity described here would fill it.
+    Nothing here is a comment on the competence or conduct of your current marketing provider, whose
+    work and accounts we have not seen. Company names are used for identification only and belong to
+    their respective owners.
+  </div>
+</footer>
+</body></html>
