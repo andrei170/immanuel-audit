@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quote &middot; Immanuel Enterprises &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.agnav .inner::-webkit-scrollbar{display:none}
+.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink)}
+.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
+.agnav a.ext{opacity:.8}
+@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
+</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Audit</a><a href="seo.html">SEO Analysis</a><a href="competitors.html">Competitors</a><a href="models.html">Roofers Worth Copying</a><a href="outside.html">Outside New York</a><a href="ads.html">Top Advertisers</a><a href="plan.html">Plan &amp; Pricing</a><a href="quote.html" class="on">Quote</a><a href="support.html">Support &amp; Packages</a><a href="https://andrei170.github.io/immanuel-demo/" class="ext" target="_blank" rel="noopener">Concept Site &#8599;</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Proposal &middot; SEO &amp; Website Build &middot; Immanuel Enterprises Inc</div>
+    <div class="sub">Prepared for Isaac &middot; 25 September 2026 &middot; AG1 Consulting</div>
+    <h1>Two Ways To Do This. Both Cost Less Than The Profit On One Extra Roof.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-A">
+        <div class="bigletter bl-A" style="font-size:42px">20</div>
+        <div class="score100">more jobs a month you told us you could handle</div>
+      </div>
+      <div class="heroread">
+        <h2>This is not a marketing budget question. It is a capacity question.</h2>
+        <p>You are running 55&ndash;60 residential jobs a month and you said you could take <b>around twenty more.</b>
+        On your own numbers a replacement is <b>$17,000&ndash;$20,000 at roughly 55% net</b>.</p>
+        <p><b>One additional replacement covers the entire build, twice over.</b></p>
+        <div class="tag">Figures below are yours, as given on our call of 3 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Two Options</div>
+    <div class="two">
+      <div class="box">
+        <div class="tagp">Core</div>
+        <h3>$6,000 build + $1,500/month</h3>
+        <ul>
+          <li>Every fix from the audit &mdash; Chittenango URL moved and redirected, image compression, sitemap cleaned, author and category archives noindexed</li>
+          <li>LocalBusiness and service markup extended across the site</li>
+          <li>Google Business Profile optimised, every service area set</li>
+          <li><b>40 written location and service pages</b>, at the standard of your existing county pages</li>
+          <li>Instant-quote page</li>
+          <li>Monthly reporting on what each page and channel produced</li>
+        </ul>
+        <div class="when">If you want the pages and nothing else.</div>
+      </div>
+      <div class="box pri">
+        <span class="ribbon">Recommended</span>
+        <div class="tagp">Complete</div>
+        <h3>$8,500 build + $2,000/month</h3>
+        <ul>
+          <li><b>Everything in Core</b></li>
+          <li><b>Website revamp</b> &mdash; rebuilt around who you actually are, including the faith positioning, a Why Immanuel page and a What to Expect page</li>
+          <li><b>VSL scripted and directed</b>, featuring you, to pre-handle objections before anyone picks up a phone</li>
+          <li>Repair and replacement separated into their own journeys</li>
+          <li><b>60+ pages</b> rather than 40</li>
+          <li>Project gallery with town names in filenames and alt text</li>
+          <li>FAQ answers written to be quoted by AI assistants and Google's summaries</li>
+        </ul>
+        <div class="when">If you want the whole thing done properly, once.</div>
+      </div>
+    </div>
+    <div class="tag" style="margin-top:14px">Build fee is split 50/50 &mdash; half to begin, half when the site and VSL are delivered. The monthly starts when the build ships, not before. Six-month term on the monthly.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">How This Fits With The Two Numbers You Already Have</div>
+    <div class="win">
+      <div class="lab">This is the piece we said we would price separately</div>
+      <p>On the <b>Plan &amp; Pricing</b> page we quoted <b>$1,500&ndash;$2,500 one-off</b> for the tracking and the
+      website fixes, and then wrote this:</p>
+      <p style="font-size:17px"><b>&ldquo;Quoted separately: the service-area pages. Twenty-one cities with nothing
+      built for them is a bigger piece of work than the fixes above and should not be buried inside them.&rdquo;</b></p>
+      <p><b>This document is that separate quote.</b> The $1,500&ndash;$2,500 of fixes is folded into the build fee
+      below rather than billed twice &mdash; there is no version of this where you pay for both.</p>
+      <p><b>And the advertising structure is untouched.</b> The $3,000/month base plus 1.5% of attributed revenue on the
+      Support page was your structure, for ad management, and nothing here replaces, includes or competes with it. This
+      is organic search and the website. Two different jobs, two different bills, and you can take either without the
+      other.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Why It Costs What It Costs</div>
+    <div class="code">
+Your own figures, from our first call:
+
+  Jobs per month                  <span class="ok">55&ndash;60</span>
+  Spare capacity                  <span class="ok">~20 more jobs/month</span>
+  Replacement, average value      <span class="ok">$17,000 &ndash; $20,000</span>   (90% of your work)
+  Replacement, net margin         <span class="ok">~55%</span>
+  Repair, average value           <span class="ok">$1,500 &ndash; $2,000</span>    (10%, ~60% net)
+
+So the net profit on ONE additional replacement is roughly
+
+  <span class="ok">$9,000 &ndash; $11,000</span>
+
+  Complete build:                 <span class="ok">$8,500</span>
+  Complete, six months all-in:    <span class="ok">$20,500</span>
+
+And priced the way we said we would price it &mdash; per page:
+
+  Core, 40 pages                  <span class="ok">$150 per page</span>
+  Complete, 60 pages              <span class="ok">$142 per page</span>  (plus the revamp and the VSL)
+  Any page beyond the package     <span class="ok">$150 each</span>
+    </div>
+    <div class="tag">We said on the Plan page we would price the city pages individually so you could start with the
+    ones that matter and stop whenever you want. That still holds &mdash; the package is a volume price, not a lock-in,
+    and you can add towns one at a time afterwards at the same rate.</div>
+    <div class="win">
+      <div class="lab">Put plainly</div>
+      <p><b>The build costs less than the profit on one extra roof.</b> The entire six months costs roughly what two
+      extra roofs return.</p>
+      <p>And for comparison, from the same call: <b>you spent about $5,000 on Facebook last month and it produced one
+      closed job at a $315 cost per lead.</b> The Complete build is less than two months of that spend &mdash; except
+      this time you own what gets built, and it does not stop the day you stop paying.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Why Six Months, And Not Three</div>
+    <div class="warn">
+      <div class="lab">Because we told you the timeline before you asked for a price</div>
+      <p>Stryker Digital, the agency whose method much of our analysis follows, publish on their own site that
+      <b>"meaningful Map Pack movement typically lands between day 120 and 180."</b> That is four to six months, stated
+      by a firm selling the service.</p>
+      <p><b>We are not going to sell you a term shorter than the thing we said it takes.</b> A three-month deal would
+      end the week before it started working, and you would reasonably conclude it failed.</p>
+      <p><b>What happens quickly:</b> the fixes, the faster pages, the Chittenango page finally saying Chittenango, the
+      instant quote, the VSL. You will see those inside weeks. <b>What compounds slowly is the ranking</b>, and that is
+      what the six months is for.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Happens Each Month</div>
+    <div class="code">
+  Month 1        Fixes shipped &middot; GBP and service areas set &middot; markup extended
+                 Website revamp and VSL begin (Complete)
+
+  Month 2        Site and VSL delivered &middot; second half of build fee due
+                 First tranche of pages live &middot; instant quote page live
+
+  Months 3&ndash;5     Pages written and published, largest towns first:
+                 Canastota &middot; Oneida &middot; Utica &middot; Rome &middot; Syracuse &middot; Baldwinsville
+                 &middot; Manlius &middot; Fayetteville &middot; Liverpool &middot; DeWitt
+                 Service pages: roof repair &middot; storm damage &middot; emergency
+                 &middot; gutters &middot; commercial
+
+  Month 6        Combinations live (roof repair in Canastota)
+                 Review system running &middot; full reporting on what produced what
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Is Not Included, Stated Plainly</div>
+    <div class="warn">
+      <div class="lab">So there is no argument later</div>
+      <ul>
+        <li><b>Google Ads management.</b> Your Google Ads are performing and staying where they are. If that changes it
+        is a separate conversation at a separate price.</li>
+        <li><b>Facebook ad management or ad spend.</b> You have paused it. We would not restart it until the pages and
+        the tracking are in place.</li>
+        <li><b>Video production.</b> We script and direct the VSL; you are recruiting a local videographer, and their
+        fee is yours.</li>
+        <li><b>Additional Google Business Profiles.</b> See below &mdash; that is conditional, not promised.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Google Business Profile Condition, In Writing</div>
+    <div class="flag">
+      <div class="lab">We are putting this in the proposal deliberately</div>
+      <p>Additional Google Business Profiles are the largest single lever in local search and they are also the fastest
+      way to lose the profile you already rank with.</p>
+      <p><b>Google's published rules allow one profile per real location where you serve customers, staffed during
+      business hours.</b> Two profiles at one address to occupy more map positions is a policy violation that can
+      suspend <b>both</b>. Mail drops, virtual offices and unstaffed units are not eligible. Suspensions are widely
+      reported as extremely difficult to reverse.</p>
+      <p><b>We will not create a profile at an address that is not genuinely staffed, and we would advise against anyone
+      who offers to.</b></p>
+      <p><b>What we will do:</b> set every service area on your existing profile, up to the twenty Google permits &mdash;
+      free, and in month one. And if your new building becomes a genuinely staffed location, we will plan a second
+      profile around it properly, verified as itself.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Room for twenty more jobs a month, and five local pages.</h2>
+    <p>The crew, the trucks and the reputation are already paid for. The pages are the cheapest thing you will buy this year.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 25 September 2026<br><br>
+    For Isaac, Immanuel Enterprises Inc, Oneida, New York. <b>All figures describing your business &mdash; 55&ndash;60
+    jobs a month, capacity for approximately twenty more, the 90/10 replacement-to-repair mix, replacement values of
+    $17,000&ndash;$20,000 at approximately 55% net margin, repair values of $1,500&ndash;$2,000 at approximately 60% net
+    margin, and the Facebook spend of approximately $5,000 producing 16 leads at a $315 cost per lead &mdash; are as you
+    stated them to AG1 on our call of 3 September 2026. They are your figures, not ours, and have not been independently
+    verified.</b> <b>The profit-per-job arithmetic shown is simple multiplication of those figures for illustration only.
+    It is not a forecast, a projection, or a claim that any additional job will result from this work.</b> <b>⚠ No number
+    of enquiries, calls, leads, jobs, rankings, map pack positions, review counts or revenue outcomes is promised,
+    forecast or guaranteed anywhere in this document, and nothing here should be read as such.</b> The quotation of
+    Stryker Digital's published day 120&ndash;180 timeline is taken from that firm's own website as read on 22 September
+    2026; AG1 has no relationship with them, has not verified any outcome they claim, and cites them only as an
+    independent industry statement of timescale. <b>Statements about Google Business Profile rules are our reading of
+    Google's published guidance as at 22 September 2026. Google's policies are Google's, change without notice, and are
+    enforced at their discretion; this is not legal or compliance advice and current policy should be verified with
+    Google before any profile is created, moved or verified.</b> Prices are in US dollars, exclude any applicable taxes,
+    and are valid for 30 days from the date above. Final terms, deliverable definitions, payment schedule and notice
+    periods would be set out in a written agreement before any work begins. Nothing in this document is a contract or an
+    offer capable of acceptance. Company and product names are used for identification only and belong to their
+    respective owners.
+  </div>
+</footer>
+</body></html>
