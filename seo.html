@@ -369,6 +369,65 @@ Google's own rules, as published:
 
 <section>
   <div class="wrap">
+    <div class="h">Finding 8 &mdash; Fast Server, Heavy Page, And Nothing To Press</div>
+    <div class="code">
+Measured on your homepage, 22 September 2026:
+
+  Time to first byte        <span class="ok">0.64 s</span>   &mdash; your server is fine
+  HTML transferred          <span class="ok">17.9 KB</span> compressed
+
+  Assets referenced         <span class="ph">22</span>
+  Total asset weight        <span class="ph">1.77 MB</span>
+
+  Three single images:      <span class="ph">433 KB &middot; 430 KB &middot; 383 KB</span>
+
+Conversion points:
+
+  Tappable phone            <span class="ok">yes &mdash; (315) 240-0887</span>
+  Sticky call bar on mobile <span class="ph">not found</span>
+  Enquiry form              <span class="ph">none found on any page</span>
+  Contact page length       <span class="ph">170 words</span>
+  Instant quote / estimator <span class="ph">none</span>
+    </div>
+    <div class="flag">
+      <div class="lab">The problem is not your host. It is three photographs.</div>
+      <p><b>Your server answers in two-thirds of a second</b>, which is better than most. Then the page pulls 1.77 MB
+      behind it, and three images account for roughly a quarter of that on their own. On a phone, on a rural Central New
+      York signal, that is the difference between a page that feels instant and one somebody abandons.</p>
+      <p>Properly compressed, those three images should be a fraction of their current size with no visible loss.
+      <b>It is a one-afternoon job and it is the cheapest speed win available.</b></p>
+    </div>
+    <div class="warn">
+      <div class="lab">And the harder question: what does a visitor actually press?</div>
+      <p>A tappable number is good and you have one. <b>But there is no sticky call bar following the visitor down the
+      page on mobile, no form we could find anywhere, and no instant quote</b> &mdash; while two of the three
+      competitors we studied lead with exactly that.</p>
+      <p>Somebody who is not ready to phone a stranger has nothing to do but leave. <b>That is the whole cost of having
+      no second option.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 9 &mdash; The Search Box Is Not The Only Thing Reading Your Site Now</div>
+    <div class="warn">
+      <div class="lab">Worth getting ahead of rather than catching up on</div>
+      <p>A growing share of "who should I call" questions are answered by AI assistants and by Google's own AI
+      summaries, which read a page rather than ranking a list of links. <b>What they can quote, they can recommend.</b></p>
+      <p><b>You are unusually well set up for this and may not realise it.</b> Your structured data already declares
+      RoofingContractor, opening hours, address, aggregate rating and individual reviews &mdash; that is precisely the
+      machine-readable material these systems lean on, and most of your competitors do not have it.</p>
+      <p>What is missing is the <b>plain-language answers</b> they prefer to quote: a real FAQ, "what does a roof
+      replacement cost in Central New York", "how do I know if I need repair or replacement", "what happens after
+      storm damage". <b>Written as direct answers, not as a brochure.</b> The same content also serves the repair and
+      replacement split you already wanted.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="h">The Scorecard</div>
     <div class="grid">
       <div class="row"><div><div class="rname">Service-area depth</div><div class="sc">3 counties, 2 towns, ~20 towns uncovered</div></div><div class="badge gF">F</div></div>
@@ -378,6 +437,8 @@ Google's own rules, as published:
       <div class="row"><div><div class="rname">Map pack &amp; service areas</div><div class="sc">Not assessable &mdash; profile not visible to us</div></div><div class="badge gC">?</div></div>
       <div class="row"><div><div class="rname">Offer on the site</div><div class="sc">No instant quote; both leaders have one</div></div><div class="badge gD">D</div></div>
       <div class="row"><div><div class="rname">Sitemap hygiene</div><div class="sc">Author archive and "uncategorized" published</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Conversion options</div><div class="sc">Phone only &mdash; no form, sticky bar or instant quote</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Page weight</div><div class="sc">1.77 MB; three images ~400 KB each</div></div><div class="badge gD">D</div></div>
       <div class="row"><div><div class="rname">Content quality</div><div class="sc">Pages are genuinely distinct, not templated</div></div><div class="badge gB">B</div></div>
       <div class="row"><div><div class="rname">On-page basics</div><div class="sc">Title, meta description, H1, tappable phone</div></div><div class="badge gA">A</div></div>
       <div class="row"><div><div class="rname">Structured data</div><div class="sc">RoofingContractor, reviews, ratings, hours</div></div><div class="badge gA">A</div></div>
@@ -389,28 +450,57 @@ Google's own rules, as published:
 
 <section>
   <div class="wrap">
-    <div class="h">The Plan, And An Honest Timeline</div>
-    <ul class="road">
-      <li><b>Move the Chittenango page to its own URL</b> and redirect the old one. One job, biggest single win.</li>
-      <li><b>Write the towns.</b> Start with the largest and nearest &mdash; Canastota, Oneida, Utica, Rome, Syracuse,
-      Baldwinsville, Manlius, Fayetteville &mdash; at the same quality as your county pages. Not templates.</li>
-      <li><b>Add the service pages that match urgency</b> &mdash; roof repair, storm damage, emergency, gutters, and a
-      commercial page for the half of your business that has none.</li>
-      <li><b>Clean the sitemap</b>, noindex the author and category archives, and thicken the contact page.</li>
-      <li><b>Then combine them.</b> Roof repair in Canastota. Storm damage in Baldwinsville. That is where the
-      searches with a leak behind them actually live.</li>
-      <li><b>Say what you are.</b> The faith angle, a Why Immanuel page and a What to Expect page &mdash; the three
-      things on this list your competitors cannot copy at any budget.</li>
-      <li><b>Put an instant quote on the site</b>, the way Prestige and Black Label both have, and photograph the new
-      building while it is going up.</li>
-    </ul>
-    <div class="warn" style="margin-top:16px">
-      <div class="lab">What to expect, stated honestly</div>
+    <div class="h">The Roadmap, In Four Phases</div>
+
+    <div class="code">
+<span class="ok">PHASE 1 &mdash; Fix what is already built        Week 1</span>
+
+  Move the Chittenango page to /service-area/chittenango-ny/
+     and 301 the old URL
+  Compress the three 400 KB images
+  Noindex /author/opunzopo/ and /category/uncategorized/,
+     drop both from the sitemap
+  Set every service area on the Google Business Profile
+     (up to 20 &mdash; free, today)
+
+<span class="ok">PHASE 2 &mdash; Build the front door           Weeks 2 to 5</span>
+
+  An enquiry form on every page, asking roof age, repair or
+     replacement, town, urgency, insurance claim or not
+  A sticky call bar on mobile
+  An instant quote or online estimate
+  Why Immanuel &middot; What to Expect &middot; a rebuilt Contact page
+  Repair and replacement split into separate pages
+
+<span class="ok">PHASE 3 &mdash; Scale the pages                Weeks 4 to 14</span>
+
+  Town pages, written not templated, largest and nearest first:
+     Canastota &middot; Oneida &middot; Utica &middot; Rome &middot; Syracuse &middot; Baldwinsville
+     &middot; Manlius &middot; Fayetteville &middot; Liverpool &middot; DeWitt
+  Service pages: roof repair &middot; storm damage &middot; emergency
+     &middot; gutters &middot; commercial
+  Then the combinations: roof repair in Canastota
+  Gallery, with town names in filenames and alt text
+  FAQ answers written for AI assistants to quote
+
+<span class="ok">PHASE 4 &mdash; Expand                        Month 4 onward</span>
+
+  Review velocity, deliberately and continuously
+  Progress photographs of the new building while it goes up
+  A second Google Business Profile &mdash; <span class="ph">ONLY</span> if the new
+     building is a genuinely staffed location, verified as itself
+</span>
+    </div>
+
+    <div class="warn">
+      <div class="lab">What to expect, stated honestly, before you spend anything</div>
       <p><b>Local search does not move in a fortnight.</b> Anyone who tells you rankings shift in 30 days is selling
       you something. In this trade, meaningful movement in local and map results typically shows somewhere around the
       <b>four to six month</b> mark, and it compounds after that.</p>
-      <p><b>We are telling you that before you spend anything</b>, because the alternative is you judging the work at
-      week six and concluding it failed.</p>
+      <p><b>We are telling you that now</b>, because the alternative is you judging the work at week six and concluding
+      it failed. Phases 1 and 2 produce visible change quickly &mdash; a faster page, a form that captures jobs, a
+      Chittenango page that finally says Chittenango. <b>Phase 3 is where the compounding starts and it needs
+      patience.</b></p>
     </div>
   </div>
 </section>
