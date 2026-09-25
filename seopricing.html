@@ -88,6 +88,16 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
 .gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+.agnav{position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
 </style></head><body>
 <style>
 .pwrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
@@ -121,7 +131,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
   <div class="wrap">
     <div class="eyebrow">SEO Pricing &middot; Immanuel Enterprises Inc &middot; Oneida, New York</div>
     <div class="sub">Prepared for Isaac &middot; 25 September 2026 &middot; AG1 Consulting</div>
-    <h1>Three Ways To Buy This, And A Fourth If You Would Rather Pay On Performance.</h1>
+    <h1>Three Packages. Two Ways To Pay For Them. Pick The Row That Suits Your Cash, Not Ours.</h1>
 
     <div class="hero">
       <div class="gradecard gc-A">
@@ -166,7 +176,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
         <div class="pribbon">Recommended</div>
         <div class="pkind">Medium</div>
         <div class="pname">Complete</div>
-        <div class="pprice"><span class="pnum">$2,000</span><span class="pper">/ mo</span></div>
+        <div class="pprice"><span class="pnum">$2,450</span><span class="pper">/ mo</span></div>
         <div class="pbuild">plus an <b>$8,500</b> build to start</div>
         <div class="psub">Everything, plus the website revamp and the VSL. Reported every two weeks with a monthly call.</div>
         <ul class="plist">
@@ -185,7 +195,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
       <div class="pcard">
         <div class="pkind">Large</div>
         <div class="pname">Complete + Weekly</div>
-        <div class="pprice"><span class="pnum">$3,000</span><span class="pper">/ mo</span></div>
+        <div class="pprice"><span class="pnum">$2,950</span><span class="pper">/ mo</span></div>
         <div class="pbuild">plus an <b>$8,500</b> build to start</div>
         <div class="psub">Same work, same build, delivered faster &mdash; and you are in the room every week.</div>
         <ul class="plist">
@@ -202,8 +212,8 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
     <div class="ptot">
       <div class="ptotrow"><span>Build, one-off &mdash; Foundation / Complete / Complete+Weekly</span><b>$4,500 &middot; $8,500 &middot; $8,500</b></div>
-      <div class="ptotrow"><span>Monthly</span><b>$1,200 &middot; $2,000 &middot; $3,000</b></div>
-      <div class="ptotrow"><span>Six months all-in, Complete</span><b>$20,500</b></div>
+      <div class="ptotrow"><span>Monthly</span><b>$1,200 &middot; $2,450 &middot; $2,950</b></div>
+      <div class="ptotrow"><span>Six months all-in, Complete</span><b>$23,200</b></div>
       <div class="ptotbig"><span>Net profit on one $18k replacement at 55%</span><b>~$9,900</b></div>
       <div class="saveflag">Build split 50/50 &mdash; half to begin, half on delivery. Monthly starts when the build ships. Six-month term.</div>
     </div>
@@ -219,12 +229,12 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
           <div class="pkind">Performance &mdash; your structure, applied to SEO</div>
           <div class="pname" style="margin-bottom:6px">Reduced monthly, plus 1.5% of attributed revenue</div>
         </div>
-        <div class="pprice" style="margin:0"><span class="pnum">$1,200</span><span class="pper">/ mo + 1.5%</span></div>
+        <div class="pprice" style="margin:0"><span class="pnum">$1,500</span><span class="pper">/ mo + 1.5%</span></div>
       </div>
       <ul class="plist" style="margin-top:16px;columns:2;column-gap:28px">
         <li><b>The same Complete scope</b> &mdash; revamp, VSL, 60+ pages, the lot</li>
         <li><b>Build still $8,500</b>, split 50/50</li>
-        <li><b>Monthly drops from $2,000 to $1,200</b></li>
+        <li><b>Monthly drops from $2,450 to $1,500</b></li>
         <li><b>1.5% of revenue we can trace to the work</b> &mdash; attribution agreed in writing before we start</li>
         <li><b>Only jobs traced to a page or campaign count.</b> Referrals and word of mouth never do</li>
         <li><b>No performance fee until tracking is attached</b> and both sides see the same numbers</li>
@@ -235,14 +245,19 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
       <div class="lab">Where it pays, and where it does not</div>
       <div class="code">
   At <span class="ok">$20,000</span> of attributed revenue a month:
-     $1,200 + 1.5%  =  <span class="ok">$1,500</span>     vs flat $2,000   <span class="ok">you save $500</span>
+     $1,500 + 1.5%  =  <span class="ok">$1,800</span>     vs flat $2,450   <span class="ok">you save $650</span>
 
-  At <span class="ok">$55,000</span> a month (roughly three replacements):
-     $1,200 + 1.5%  =  <span class="ok">$2,025</span>     vs flat $2,000   <span class="ph">about level</span>
+  At <span class="ok">$50,000</span> a month:
+     $1,500 + 1.5%  =  <span class="ok">$2,250</span>     vs flat $2,450   <span class="ok">you save $200</span>
+
+  At <span class="ok">$63,000</span> a month  &mdash;  the crossover:
+     $1,500 + 1.5%  =  <span class="ph">$2,445</span>     vs flat $2,450   <span class="ph">level</span>
 
   At <span class="ok">$100,000</span> a month:
-     $1,200 + 1.5%  =  <span class="ph">$2,700</span>     vs flat $2,000   <span class="ph">you pay $700 more</span>
-      </div>
+     $1,500 + 1.5%  =  <span class="ph">$3,000</span>     vs flat $2,450   <span class="ph">you pay $550 more</span>
+
+  At <span class="ok">$200,000</span> a month:
+     $1,500 + 1.5%  =  <span class="ph">$4,500</span>     vs flat $2,450   <span class="ph">you pay $2,050 more</span></div>
       <p><b>So the share costs you less while it is proving itself and more once it is working.</b> That is the
       point of it, and it is the right way round &mdash; but you should see the crossover before you choose, not
       after.</p>
@@ -255,6 +270,34 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
 <section>
   <div class="wrap">
+    <div class="h">Option Five &mdash; Flat Monthly, No Build Fee</div>
+    <p class="lead" style="margin-bottom:16px">If you would rather not write a build cheque at all, we fold it into the
+    monthly for the first six months. <b>Then it drops.</b> Same work, same scope, same start date &mdash; the only
+    difference is how it lands on your bank statement.</p>
+    <div class="code">
+  Foundation
+     Months 1&ndash;6      <span class="ok">$1,950 / mo</span>
+     Month 7 onward   <span class="ok">$1,200 / mo</span>
+
+  Complete                                      <span class="ok">&lt;-- the one we would pick</span>
+     Months 1&ndash;6      <span class="ok">$3,850 / mo</span>
+     Month 7 onward   <span class="ok">$2,450 / mo</span>
+
+  Complete + Weekly
+     Months 1&ndash;6      <span class="ok">$4,350 / mo</span>
+     Month 7 onward   <span class="ok">$2,950 / mo</span>
+    </div>
+    <div class="win">
+      <div class="lab">It is not a financing charge, and it is not dearer</div>
+      <p><b>Complete over six months this way comes to $23,100.</b> Paying the build separately comes to $23,200. We
+      rounded the monthly down rather than up, so the flat route is marginally cheaper, not more expensive.</p>
+      <p><b>What it actually does is move the risk.</b> On the standard structure you pay $4,250 before we have shown
+      you anything. On this one you pay a month at a time, and if we are not producing you stop paying and we stop
+      working. <b>There is no build cheque sitting with us that you cannot get back.</b></p>
+      <p><b>And it steps down rather than running forever.</b> After month six you are on the ongoing rate for ongoing
+      work, not still paying for a build that was finished half a year ago.</p>
+    </div>
+
     <div class="h">Why Six Months On Any Of Them</div>
     <div class="warn">
       <div class="lab">Because we told you the timeline before you asked for a price</div>
